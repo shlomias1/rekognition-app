@@ -20,34 +20,48 @@ Before you begin, ensure you have the following:
 
 **Clone the Repository**
 
-   ```bash
+   ```
    git clone https://github.com/shlomias1/rekognition-app.git
    cd rekognition-app
+
+   ```
 
 **Install Dependencies**
 
 You can install the required Python packages using pip and the provided requirements.txt:
 
-pip install -r requirements.txt
+   ```
+   pip install -r requirements.txt
+
+   ```
 
 **Set Up AWS Credentials**
 
 Ensure that your AWS credentials are configured properly. You can set them up using the AWS CLI:
 
-aws configure
+   ```
+   aws configure
+
+   ```
 
 Alternatively, you can set up the environment variables:
 
-export AWS_ACCESS_KEY_ID=your_access_key_id
-export AWS_SECRET_ACCESS_KEY=your_secret_access_key
-export AWS_DEFAULT_REGION=your_aws_region
+   ```
+   export AWS_ACCESS_KEY_ID=your_access_key_id
+   export AWS_SECRET_ACCESS_KEY=your_secret_access_key
+   export AWS_DEFAULT_REGION=your_aws_region
+
+   ```
 
 **Usage**
 **Running the App**
 
 You can run the app locally with the following command:
 
-python app.py
+   ```
+   python app.py
+
+   ```
 
 By default, the app will process images located in the images/ directory.
 
@@ -57,11 +71,17 @@ If you prefer to run the app inside a Docker container, follow these steps:
 
 Build the Docker Image:
 
-docker build -t rekognition-app .
+   ```
+   docker build -t rekognition-app .
+
+   ```
 
 Run the Docker Container:
 
-docker run -d -p 5000:5000 rekognition-app
+   ```
+   docker run -d -p 5000:5000 rekognition-app
+
+   ```
 
 **Contact**
 
